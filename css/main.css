@@ -1,5 +1,6 @@
-
-   / Global (Inheritance) /
+/* =========================
+   Global (Inheritance)
+========================= */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -7,16 +8,85 @@ body {
   padding: 0;
 }
 
-
-  / Header + Footer (Hoodie Color) /
-                  
+/* =========================
+   Header + Footer (Hoodie Color)
+========================= */
 header,
 footer {
-  background-color: #D8C3D9; 
+  background-color: #D8C3D9; /* hoodie pastel color */
   padding: 16px;
 }
 
-
- /  Site Title (class selector) /
+/* =========================
+   Site Title (class selector)
+========================= */
 .site-title {
-  color: #1a
+  color: #1a1a1a;
+}
+
+/* =========================
+   Image (id selector)
+   0 horizontal, 0 vertical, 2px blur, 1px spread, black
+========================= */
+#my-image {
+  box-shadow: 0 0 2px 1px black;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 12px 0;
+}
+
+/* =========================
+   Main layout
+========================= */
+main {
+  padding: 16px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* =========================
+   Hobbies list
+   - square bullets
+   - odd items background
+========================= */
+#hobbies {
+  list-style-type: square;
+  padding-left: 22px;
+}
+
+#hobbies li:nth-child(odd) {
+  background-color: #f3f3f3;
+  padding: 6px 8px;
+}
+
+/* =========================
+   Navigation styling
+========================= */
+nav ul {
+  list-style: none;  
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #333;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 4px;
+  color: #111;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #cfaed4; /* darker shade of hoodie color */
+}
