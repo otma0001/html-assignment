@@ -14,9 +14,10 @@ body {
 ========================= */
 header,
 footer {
-  background-color: #e6e6e6;
+  background-color: #ffc0cb;
   padding: 16px;
 }
+
 
 /* =========================
    Site Title (class selector)
