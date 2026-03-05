@@ -37,11 +37,6 @@ main {
   padding-left: 22px;
 }
 
-#hobbies li:nth-child(odd) {
-  background-color: #f4e9f5;
-  padding: 6px 8px;
-}
-
 nav ul {
   list-style: none;
   padding: 0;
