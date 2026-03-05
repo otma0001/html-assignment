@@ -1,123 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!--
-    Midterm: Single-page website from prototype
-    Student: (Your Name)
-    File: midterm/index.html
-  -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lone Starfish</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Semantics Assignment</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!-- Page wrapper -->
-  <div class="page">
 
-    <!-- HEADER: image + title overlay -->
-    <header class="site-header" id="home">
-      <!-- Required: use image tag -->
-      <img class="hero-img" src="images/lone-starfish.jpg" alt="Starfish on a beach" />
+<header>
+  <h1 class="site-title">Djouher Otmani</h1>
 
-      <!-- Title on top of image -->
-      <h1 class="site-title">Lone Starfish</h1>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- NAV -->
-    <nav class="site-nav" aria-label="Primary">
-      <a href="#home">HOME</a>
-      <span class="divider" aria-hidden="true">|</span>
-      <a href="#story">STORY</a>
-      <span class="divider" aria-hidden="true">|</span>
-      <a href="#contact">CONTACT</a>
-    </nav>
+<main>
+<article>
 
-    <main>
-      <!-- STORY SECTION -->
-      <section class="section" id="story">
-        <h2>Life of a Starfish</h2>
+<h2>About Me</h2>
 
-        <!-- Required: image with text wrapping around it -->
-        <img class="article-img" src="images/starfish.jpg" alt="Starfish close up" />
+<img id="my-image" src="images/me.jpg" alt="My photo">
 
-        <p>
-          Starfish are marine animals found in oceans all over the world. They usually live on the
-          seafloor, and they move slowly using tiny tube feet underneath their arms. Starfish can
-          come in many colours and sizes, depending on the species and where they live.
-        </p>
+<p>
+My name is Djouher Otmani. I am Kabyle from Algeria, originally from Tizi Ouzou, and I am currently living in Montreal.
+I am studying at Algonquin College in the Media Design program, where I am learning the basics of web development.
+Through this course, I am discovering how <abbr title="HyperText Markup Language">HTML</abbr> works and why structure and meaning are important in web pages.
+I really <em>enjoy</em> learning new digital skills and improving step by step through practice and patience.
+</p>
 
-        <p>
-          One interesting fact is that starfish can regrow lost arms. They also eat in a unique way:
-          some species can push their stomach out of their body to digest food outside, then pull it
-          back in. Starfish are important to ocean ecosystems because they help keep populations of
-          other sea creatures balanced.
-        </p>
-      </section>
+<p>
+Moving to Canada has been a meaningful experience for me, both personally and academically.
+This program helps me build confidence in creating websites and understanding semantic elements.
+I am motivated to continue learning and growing in this field because technology plays a big role in creativity today.
+This is my 1<sup>st</sup> semester building a complete HTML page from scratch, and it has been a very positive learning experience.
+</p>
 
-      <!-- FACTS SECTION -->
-      <section class="section">
-        <h2>Facts About Starfish</h2>
+<h2>My Hobbies</h2>
 
-        <!-- Required: proper list syntax -->
-        <ul class="facts">
-          <li>Starfish are not fish; they are echinoderms (related to sea urchins).</li>
-          <li>Most starfish have five arms, but some species have more.</li>
-          <li>They move using tube feet powered by a water vascular system.</li>
-          <li>Many starfish can regenerate arms if they are injured.</li>
-        </ul>
-      </section>
+<ul id="hobbies">
+  <li>Sports and training</li>
+  <li>Design and editing</li>
+</ul>
 
-      <!-- CONTACT SECTION -->
-      <section class="section" id="contact">
-        <h2>Contact to learn more</h2>
+<blockquote>
+  <p>"A journey of a thousand miles begins with a single step"</p>
+  <cite>— Laozi</cite>
+</blockquote>
 
-        <form class="contact-form" action="#" method="post">
-          <!-- Required: inputs linked to labels -->
+</article>
+</main>
 
-          <div class="form-row">
-            <label for="your-name">Your Name</label>
-            <input id="your-name" name="your-name" type="text" />
-          </div>
+<footer>
+<p>© 2026 Djouher Otmani. All rights reserved.</p>
+</footer>
 
-          <div class="form-row">
-            <label for="your-email">Your Email</label>
-            <input id="your-email" name="your-email" type="email" />
-          </div>
-
-          <div class="form-row">
-            <label for="your-message">Your Message</label>
-            <textarea id="your-message" name="your-message" rows="5"></textarea>
-          </div>
-
-          <fieldset class="form-row">
-            <legend>Would you like to visit the starfish?</legend>
-
-            <div class="radios">
-              <input id="visit-yes" name="visit" type="radio" value="yes" />
-              <label for="visit-yes">Yes</label>
-
-              <input id="visit-no" name="visit" type="radio" value="no" />
-              <label for="visit-no">No</label>
-
-              <input id="visit-maybe" name="visit" type="radio" value="maybe" />
-              <label for="visit-maybe">Maybe</label>
-            </div>
-          </fieldset>
-
-          <button class="btn" type="submit">SEND</button>
-        </form>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <small>&copy; Lone Starfish.</small>
-    </footer>
-
-  </div>
 </body>
 </html>
